@@ -1,0 +1,32 @@
+Package: csemGRM
+Title: Conditional Standard Errors of Measurement for the Graded Response Model
+Version: 0.1.0
+Authors@R:
+    person("First", "Last",
+           email = "corresponding@email.com",
+           role = c("aut", "cre"))
+Description: Implements analytical and bootstrap estimators of the conditional
+    standard error of measurement (CSEM) for the Graded Response Model (GRM;
+    Samejima, 1969). While marginal reliability summarizes measurement precision
+    across the full latent trait continuum, the CSEM varies as a function of
+    the latent trait level theta and provides a more informative picture of
+    where a scale measures precisely and where it does not. csemGRM computes
+    item and test information functions, derives analytical CSEM as the
+    reciprocal of the square root of test information, estimates empirical CSEM
+    via parametric bootstrap resampling, computes conditional reliability
+    coefficients across the theta continuum, and visualizes CSEM profiles with
+    confidence bands. Built-in simulated datasets representative of attitude
+    and character measurement instruments are included for immediate
+    demonstration. The package is applicable to any GRM-based scale development
+    and validation context, including educational, psychological, organizational,
+    and clinical measurement.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports:
+    mirt (>= 1.40),
+    ggplot2 (>= 3.4.0),
+    methods
+URL: https://github.com/rmeasure/csemGRM
+BugReports: https://github.com/rmeasure/csemGRM/issues
